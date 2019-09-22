@@ -18,8 +18,8 @@ let () =
         );
 
         test("#manifest.allowCache", () => {
-          let m = M3u8Parser.make() |> M3u8Parser.manifest;
-          expect(m) |> toEqual(true);
+          let p = M3u8Parser.make();
+          expect(p.manifest.allowCache) |> toEqual(true);
         });
       }
     ),
