@@ -1,0 +1,25 @@
+{
+  "name": "@drewwyatt/bs-m38u-parser",
+  "version": "0.1.0",
+  "description": "Bucklescript bindings for m3u8-parser library",
+  "license": "MIT",
+  "files": [
+    "src/m3u8parser.re",
+    "bsconfig.json"
+  ],
+  "peerDependencies": {
+    "m3u8-parser": "4.4.0"
+  },
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "test": "bsb -make-world && jest"
+  },
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.9",
+    "bs-platform": "^5.0.6",
+    "jest": "^24.9.0",
+    "m3u8-parser": "^4.4.0"
+  }
+}
