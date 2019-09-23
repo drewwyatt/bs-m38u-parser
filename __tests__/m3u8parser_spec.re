@@ -23,7 +23,7 @@ let () =
 
         test("#manifest#allowCache", () => {
           let manifest = M3u8Parser.make() |> M3u8Parser.manifestGet;
-          expect(manifest##allowCache) |> toBeTruthy;
+          expect(manifest##allowCache) |> toEqual(true);
         });
       }
     ),

@@ -1,5 +1,4 @@
-[@bs.deriving abstract]
-type manifest = Js.t({. "allowCache": bool});
+type manifest = {. "allowCache": bool};
 
 module Parser = (T: {type t;}) => {
   [@bs.new] [@bs.module "m3u8-parser"] external make: unit => T.t = "Parser";
